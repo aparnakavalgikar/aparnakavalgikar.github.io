@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aparna Kavalgikar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function (){
+
+            $("#arrow").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#work").offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="banner">
+    <h2>Welcome to My Portfolio</h2>
+</div>
+<div class="glow1"><div class="glow2"></div></div>
+<div class="container-fluid text-center myDetails">
+    <div class="forColor">
+        <br/><br/>
+        <h3>Hello, I am Aparna Kavalgikar</h3>
+        <h4>I'm passionate about my work and I love development.</h4>
+        <p>I have around 7 years of extensive experience in building state-of-art, easy to use,
+            responsive, user-friendly web applications.
+        I have deep functional knowledge and hands on experience on Java, RESTful Web Services,
+            SQL, Angular2, AngularJS, Node.js, Express, HTML5, CSS, Bootstrap, JavaScript and Bash Shell Scripting.
+        </p><br/>
+
+<div class="container-fluid text-center workDetails">
+    <h3>Please Check Some of My Work</h3>
+    <a id="arrow"><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/pink-jelly-icons-arrows/009093-pink-jelly-icon-arrows-arrow-thick-down.png" width="5%"></a><br/><br/>
+    <div class="row" id="work">
+        <div class="col-sm-5 project" onclick="location.href='ShareAndConnect.html'">
+            <h3>Share and Connect</h3>
+            <h4>Connect with your Neighborhood</h4>
+            <img src="./images/ShareAndConnect/login.png" width="400px" height="250px"/>
+            <p>Technology: Angular 2, Node.js, Express, MongoDB, HTML5, Bootstrap CSS</p>
+        </div>
+        <div class="col-sm-5 project" onclick="location.href='DietPlanner.html'">
+            <h3>Diet Planner </h3>
+            <h4>Choice for Life</h4>
+            <img src="./images/DietPlanner/login.jpg" width="400px" height="250px"/>
+            <p>Technology: AngularJS, Node.js, Express, MongoDB, HTML5, Bootstrap CSS</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5 project" onclick="location.href='GoMovies.html'">
+            <h3>Go Movies</h3>
+            <h4>Book Movie Ticket Online</h4>
+            <img src="./images/GoMovies/login.png" width="400px" height="250px"/>
+            <p>Technology: AngularJS, Restful Web API Java, SQL, HTML5, Bootstrap CSS</p>
+        </div>
+        <div class="col-sm-5 project" onclick="location.href='ITUBuzz.html'">
+            <h3>ITUBuzz</h3>
+            <h4>The ITU Social Network</h4>
+            <img src="./images/ITUBuzz/login.png" width="400px" height="250px"/>
+            <p>Technology: JSP, Java, Servlet, JavaScript, HTML5, BootStrap3, CSS3, SQL</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid text-center footer">
+    &copy; Aparna Kavalgikar
+</footer>
+
+</body>
+</html>
