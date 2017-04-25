@@ -19,17 +19,14 @@ html, body {
     height: 5px;
 }
 .glow2 {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,fcfcfc+48,000000+99 */
-    background: #000000; /* Old browsers */
-    background: -moz-linear-gradient(left,  #4d4d4d 0%, #fcfcfc 48%, #4d4d4d  99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #4d4d4d 0%,#fcfcfc 48%, #4d4d4d 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #4d4d4d 0%,#fcfcfc 48%, #4d4d4d 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
-
+    background: #000000;
+    background: -moz-linear-gradient(left,  #4d4d4d 0%, #fcfcfc 48%, #4d4d4d  99%);
+    background: -webkit-linear-gradient(left,  #4d4d4d 0%,#fcfcfc 48%, #4d4d4d 99%);
+    background: linear-gradient(to right,  #4d4d4d 0%,#fcfcfc 48%, #4d4d4d 99%);
     height: 5px;
     width: 200px;
     position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation: mymove 5s infinite;
     animation: move 12s infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
@@ -46,14 +43,11 @@ html, body {
     to {left: 1200px;}
 }
 .forColor, .content {
-    /*background-color: rgba(102, 102, 255, 0.9);*/
     margin-left: -1.2%;
     width: 103%;
     padding: 50px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a18dfc+0,6666ff+63,6666ff+75,a788fc+100 */
-    background: rgba(161,141,252,0.9); /* Old browsers */
-    background: radial-gradient(ellipse at center, rgba(161,141,252,0.9) 0%,rgba(102,102,255,0.9) 63%,rgba(102,102,255,0.9) 75%,rgba(167,136,252,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a18dfc', endColorstr='#a788fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: rgba(161,141,252,0.9);
+    background: radial-gradient(ellipse at center, rgba(161,141,252,0.9) 0%,rgba(102,102,255,0.9) 63%,rgba(102,102,255,0.9) 75%,rgba(167,136,252,0.9) 100%);
 }
 .myDetails p {
     text-align: left;
@@ -97,14 +91,24 @@ html, body {
 }
 
 /* Screen Shots */
-
 .content img {
-    width: 80%;
-    margin: 1%;
+    width: 70%;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 40px #0000b3;
 }
 
 .content p {
-    width: 80%;
+    text-align: center;
+    width: 60%;
+}
+
+.content a:link, a:visited, a:hover, a:active {
+    color: #ff99e6;
+}
+
+.content a:hover, a:active {
+    color: white;
 }
 
 #logo {
