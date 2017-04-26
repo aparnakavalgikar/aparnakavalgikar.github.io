@@ -27,25 +27,28 @@ body {
     padding: 0;
     font-size: 3.8em;
     font-weight: 600;
-    color: #404040;
+    color: white;
+    text-shadow: 2px 2px 4px #003d4d;
 }
 
 .text-vertical-center h2 {
     font-size: 2.8em;
+    color: white;
+    text-shadow: 1px 1px 2px #003d4d;
 }
-/* Custom Button Styles */
 
+/* Custom Button Styles */
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(51, 51, 255, 0.6);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(51, 51, 255, 0.9);
 }
 
 .btn-light {
@@ -61,14 +64,34 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
+#bgimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
+/* Header */
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 10, 0, 0.8);
+    /*
+    background: url(../images/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+}
+
+/* Custom Horizontal Rule */
 hr.small {
     max-width: 100px;
 }
 
 /* Side Menu */
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -152,19 +175,7 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
 
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../images/bg.png) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
 /* About */
 
@@ -187,11 +198,15 @@ hr.small {
     display: table;
     width: 100%;
     height: 250px;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../images/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.callout .text-vertical-center {
+    background-color: rgba(51, 10, 0, 0.5);
 }
 
 .callout h1 {
@@ -295,7 +310,7 @@ footer {
 }
 
 .myDetails {
-    background: url("../images/bg.png") no-repeat center fixed;
+    background: url("../images/bg.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -303,25 +318,26 @@ footer {
     margin-left: -1.2%;
     width: 103%;
     padding: 50px;
+    background-color: rgba(51, 10, 0, 0.8);
 }
 
 .content img {
     width: 70%;
     margin: 2%;
     border-radius: 10px;
-    box-shadow: 1px 1px 40px #0000b3;
+    box-shadow: 1px 1px 40px black;
 }
 
 .content p {
     width: 70%;
     line-height: 150%;
     font-size: 1.5em;
-    color: black;
+    color: #e6e6e6;
     margin: auto;
 }
 
 .content a:link, a:visited {
-    color: #001a66;
+    color: #3385ff;
 }
 
 .content a:hover, a:active {
