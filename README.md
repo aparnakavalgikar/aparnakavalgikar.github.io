@@ -1,0 +1,1 @@
+Unless otherwise mentioned, all the files are under APACHE GPL v3.  
